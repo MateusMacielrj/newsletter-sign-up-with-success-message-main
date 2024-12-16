@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.corpo {
+  width: 1000px; /* Defina a largura desejada para o container */
+  height: 700px; /* Defina a altura desejada para o container */
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  border: solid 2.0px black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o container na tela */
+  border-radius: 25px;
+ webkit-box-shadow: 1px -2px 31px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px -2px 31px 1px rgba(0,0,0,0.75);
+box-shadow: 1px -2px 31px 1px rgba(0,0,0,0.75);
+}
+.container {
+  
+  width: 450px;
+  height: 600px;
+  padding-top: 80px;
+}
+
+h1 {
+    font-size: 50px;
+    padding-left: 50px;
+}
+
+.join{
+ 
+  padding-left: 50px;
+  padding-top: 15px; 
+  line-height: 25px;
+}
+
+ul{
+  
+  list-style-type: none;
+  width: 450px;
+  padding-left: 50px;
+  padding-top: 15px;
+  }
+
+  li{
+     line-height: 30px;
+    display: flex;
+  }
+
+  ul img {
+margin-right: 10px;
+  }
+
+  form{
+    
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  form label {
+    
+    padding-left: 50px;
+    font-size: 11px;
+    font-weight: 600;
+   
+  }
+
+  form input{
+    border: 1.5px solid black;
+    margin-left:50px ;
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+  }
+
+  input::placeholder {
+    width: 300px;
+    margin-right: 50px;
+    padding-left: 15px;
+        }
+
+  form button {
+    
+    font-weight: 700;
+    color: white;
+    border: none;
+    margin-left:50px ;
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+   
+  }
+
+  button:hover {
+    background-color: #f05a28;
+    color: #fff;
+}
+       #success-message{
+        display: none;
+        width: 350px;
+        background-color: #232742;
+        margin-left: 50px;
+        margin-top: 30px;
+        line-height: 25px;
+        color: white;
+        font-weight: 400;
+        border-radius: 5px;
+        font-size: 14px;
+       }
+
+
+       .sub{
+        padding-left: 80px;
+        align-items: center;
+       }
+
+       span{
+        padding-left: 25px;
+       }
+
+
+       
+ 
+
+
+
+   

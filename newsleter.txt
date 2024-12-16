@@ -1,0 +1,51 @@
+const form = document.getElementById('newsletter-form');
+const emailInput = document.getElementById('email');
+const successMessage = document.getElementById('success-message');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const email = emailInput.value.trim();
+
+  if (!validateEmail(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  // Simulate form submission (replace with your actual form submission logic)
+  console.log('Submitting form...');
+  setTimeout(() => {
+    showSuccessMessage(email);
+  }, 1000); // Simulate a 1-second delay
+});
+
+function validateEmail(email) {
+  const regex = /^(([^<>()\[\]\\.,;:\s@"]+)(\.[^<>()\[\]\\.,;:\s@"]+)*)@(([^<>()\[\]\\.,;:\s@"]+)(\.[^<>()\[\]\\.,;:\s@"]+)*)$/;
+  return regex.test(email);
+}
+
+function showSuccessMessage(email) {
+  successMessage.textContent = `Thank you for subscribing, ${email}!`;
+  successMessage.style.display = 'block';
+}
+
+
+Explicação das mudanças:
+
+1-Validação de e-mail:
+
+Adicionada a validateEmail()função para verificar se o e-mail inserido é válido usando uma expressão regular.
+Caso o e-mail seja inválido, uma mensagem de alerta será exibida e o envio do formulário será impedido.
+
+
+2-Exibição de mensagem de sucesso:
+
+a- A showSuccessMessage()função é chamada após o envio bem-sucedido do formulário (ou após o atraso simulado).
+b- Esta função atualiza o successMessageconteúdo do elemento com uma mensagem personalizada através do email fornecido.
+c- propriedade successMessagedo elemento displayé definida como blockpara torná-lo visível.
+
+Agora, ao enviar o formulário com um endereço de e-mail válido, você verá uma mensagem de sucesso com seu endereço de e-mail exibido abaixo do formulário.
+
+Lembre-se de substituir a lógica de envio de formulário de espaço reservado no setTimeout()retorno de chamada pelo seu método real de envio de formulário.
+
+
